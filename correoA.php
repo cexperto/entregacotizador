@@ -1,4 +1,6 @@
 <?php
+echo "hola";
+/*
 require 'vendor/autoload.php';
 $sendgrid = new SendGrid("SENDGRID_APIKEY");
 $email    = new SendGrid\Email();
@@ -9,3 +11,4 @@ $email->addTo("rattman.c@gmail.com")
       ->setHtml("and easy to do anywhere, even with PHP");
 
 $sendgrid->send($email);
+*/
