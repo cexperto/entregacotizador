@@ -1,7 +1,20 @@
-
-    $(document).on('ready',function(){       
+$(document).on('ready',function(){       
     $('#enviar').click(function(){
         var url = "precio.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data: $("#precio").serialize(), 
+           success: function(data)             
+           {
+             $('#res').html(data);
+            
+           }
+       });
+    });
+    //
+     $('#enviar').click(function(){
+        var url = "correoA.php";
         $.ajax({                        
            type: "POST",                 
            url: url,                     
