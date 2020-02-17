@@ -1,3 +1,4 @@
+<?php
 require 'vendor/autoload.php';
 $sendgrid = new SendGrid("SENDGRID_APIKEY");
 $email    = new SendGrid\Email();
