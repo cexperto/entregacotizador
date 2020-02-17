@@ -13,18 +13,8 @@ $(document).on('ready',function(){
        });
     });*/
     //
-     $('#enviar').click(function(){
-        var url = "correoA.php";
-        $.ajax({                        
-           type: "POST",                 
-           url: url,                     
-           data: $("#precio").serialize(), 
-           success: function(data)             
-           {
-             $('#res').html(data);
-            
-           }
-       });
+     $.post("correoA.php",$("#formulario").serialize(),function(){
+		});
     });
 });
 
