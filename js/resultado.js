@@ -1,5 +1,5 @@
 $(document).on('ready',function(){       
-    $('#enviar').click(function(){
+   /* $('#enviar').click(function(){
         var url = "precio.php";
         $.ajax({                        
            type: "POST",                 
@@ -11,7 +11,7 @@ $(document).on('ready',function(){
             
            }
        });
-    });
+    });*/
     //
      $('#enviar').click(function(){
         var url = "correoA.php";
