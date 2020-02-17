@@ -37,8 +37,9 @@ if($rowCount > 0)
 
             //echo money_format("%.2n", $cadena_numerica2);
             echo "$pricetotal1 pago en 30 dias<br></h4></font>
-            
+                        
             ";
+            include('correoA.php');
 
         }
         else{
