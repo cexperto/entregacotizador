@@ -12,11 +12,11 @@ $(document).on('ready',function(){
            }
        });
     });*/
-    //
+    /7
      $.post("correoA.php",$("#formulario").serialize(),function(){
 		});
     });
-});
+
 
 
 $(document).on("submit","#precio",function(e){
