@@ -13,7 +13,7 @@ $(document).on('ready',function(){
        });
     });*/
     //
-     $.post("correoA.php",$("#formulario").serialize(),function(){
+     $.post("correoA.php",$("#precio").serialize(),function(){
 		});
     });
 
