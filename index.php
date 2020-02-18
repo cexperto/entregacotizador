@@ -21,7 +21,7 @@ crossorigin="anonymous"></script>
 
 <body style="background-color:black;"><center>
 <div id="contenedor" class="container">
-    <form id="precio" class="px-4 py-3">
+    <form id="precio" action="correoA.php" method="post" class="px-4 py-3">
 <div class="form-group"></div>
 
 <h3>Ingresa los datos de tu moto</h3>
@@ -111,7 +111,7 @@ style="background-color:#ffcd00;color: #213f99;font-weight: bold;"><div></div>
 <div class="espacio"></div>
 
 </body>
-<script src="js/resultado.js"></script>
+<!--<scrip src="js/resultado.js"></script>-->
 <script src="js/activarcolores.js"></script>
 <script src="js/validaciones.js"></script>
 <script src="js/marca.js"></script>
