@@ -18,7 +18,7 @@ $(document).on('ready',function(){
     });
 
 
-
+/*
 $(document).on("submit","#precio",function(e){
     e.preventDefault();
     document.getElementById('res').style.height='200px';
@@ -30,5 +30,5 @@ $(document).on("submit","#precio",function(e){
         $("#cargapost").html(res);
     });
 })
-
+*/
 /* border-radius: 10px; */
