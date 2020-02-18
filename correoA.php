@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 class SendMail{
     public static function SendMail($to,$subject,$content){
         $key ='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';
