@@ -3,3 +3,8 @@
         "sendgrid/sendgrid": "^7.4"
     }
 }
+{
+  "require": {
+    "sendgrid/sendgrid": "~5.0.9"
+  }
+}
