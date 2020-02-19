@@ -142,7 +142,7 @@ $email->addContent(
 );
     
     
-$sendgrid = new \SendGrid(getenv($key));
+$sendgrid = new \SendGrid($key);
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
