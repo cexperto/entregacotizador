@@ -140,7 +140,8 @@ if(isset($_POST['enviar'])){
         $email->addContent("text/plain",$messaje);
 
         $sendgrid = new \SendGrid($key);
-        if($sendgrid->send($email));{
+        if($sendgrid->send($email))
+        {
             echo "<script>
             alert('email enviado');</script>";
             
