@@ -124,28 +124,33 @@ require 'vendor/autoload.php';
 
 if(isset($_POST['enviar'])){
         $key ="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";
-        $marca=$_POST['marca'];
-        $modelo=$_POST['modelo'];
-        $referencia=$_POST['referencia'];
+        <?php
+// using SendGrid's PHP Library
+// https://github.com/sendgrid/sendgrid-php
+require 'vendor/autoload.php'; // If you're using Composer (recommended)
+// Comment out the above line if not using Composer
+// require("./sendgrid-php.php");
+// If not using Composer, uncomment the above line
+$email = new \SendGrid\Mail\Mail();
+$email->setFrom("rattman.c@gmail.com", "Example User");
+$email->setSubject("Sending with SendGrid is Fun");
+$email->addTo("sipuedeshazloya@gmail.com", "Example User");
+$email->addContent(
+    "text/plain", "and easy to do anywhere, even with PHP"
+);
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+$sendgrid = new \SendGrid(getenv('$key'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
 
-        $subject="correito tdm";
-        $messaje=[$marca,$modelo,$referencia];
-    
-    
-    
-        $email = new \SendGrid\Mail\Mail();
-        $email->setForm("rattman.c@gmail.com","Andres Ayala");
-        $email->setSubject($subject);
-        $email->addTo("sipuedeshazloya@gmail.com",$marca);
-        $email->addContent("text/plain",$messaje);
-
-        $sendgrid = new \SendGrid($key);
-        if($sendgrid->send($email))
-        {
-            echo "<script>
-            alert('email enviado');</script>";
-            
-        }
         
     }
     ?>
