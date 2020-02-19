@@ -142,8 +142,8 @@ if(isset($_POST['enviar'])){
         $sendgrid = new \SendGrid($key);
         if($sendgrid->send($email));{
             echo "<script>
-            alert('email enviado');
-            </script>
+            alert('email enviado');</script>";
+            
         }
         
     }
