@@ -1,4 +1,5 @@
 <?php
+/*
 require 'vendor/autoload.php';
 
 
@@ -32,6 +33,6 @@ try {
 }
 
         
-    
+*/    
     ?>
 
