@@ -21,7 +21,7 @@ crossorigin="anonymous"></script>
 
 <body style="background-color:black;"><center>
 <div id="contenedor" class="container">
-    <form id="precio" action="correoA.php" method="post" class="px-4 py-3">
+    <form id="precio" action="" method="post" class="px-4 py-3">
 <div class="form-group"></div>
 
 <h3>Ingresa los datos de tu moto</h3>
@@ -111,9 +111,34 @@ style="background-color:#ffcd00;color: #213f99;font-weight: bold;"><div></div>
 <div class="espacio"></div>
 
 </body>
+    
+   
 <!--<scrip src="js/resultado.js"></script>-->
 <script src="js/activarcolores.js"></script>
 <script src="js/validaciones.js"></script>
 <script src="js/marca.js"></script>
 <script src="js/referencia.js"></script>
 <script src="js/soat.js"></script>
+<?php
+require 'vendor/autoload.php';
+
+if(isset($_POST['enviar'])){
+        $key ="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";
+        $marca=$_POST['marca'];
+        $modelo=$_POST['modelo'];
+        $referencia=$_POST['referencia'];
+
+        $subject="correito tdm";
+        $messaje=[$marca,$modelo,$referencia];
+        
+        $email = new \SendGrid\Mail\Mail();
+        $email->setForm("rattman.c@gmail.com","Andres Ayala");
+        $email->setSubject($subject);
+        $email->addTo("sipuedeshazloya@gmail.com",$marca);
+        $email->addContent("text/plain",$messaje);
+
+        $sendgrid = new \SendGrid($key);
+        if($sendgrid->send($email));{echo "email enviado";}
+        
+    }
+    ?>
