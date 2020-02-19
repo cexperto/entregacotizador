@@ -21,7 +21,7 @@ crossorigin="anonymous"></script>
 
 <body style="background-color:black;"><center>
 <div id="contenedor" class="container">
-    <form id="precio" action="" method="post" class="px-4 py-3">
+    <form id="precio"  class="px-4 py-3">
 <div class="form-group"></div>
 
 <h3>Ingresa los datos de tu moto</h3>
