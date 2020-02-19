@@ -1,5 +1,5 @@
 $(document).on('ready',function(){       
-   /* $('#enviar').click(function(){
+    $('#enviar').click(function(){
         var url = "precio.php";
         $.ajax({                        
            type: "POST",                 
@@ -11,14 +11,13 @@ $(document).on('ready',function(){
             
            }
        });
-    });*/
+    });
     //
-     $.post("correoA.php",$("#precio").serialize(),function(){
-		});
+     
     });
 
 
-/*
+
 $(document).on("submit","#precio",function(e){
     e.preventDefault();
     document.getElementById('res').style.height='200px';
@@ -30,5 +29,5 @@ $(document).on("submit","#precio",function(e){
         $("#cargapost").html(res);
     });
 })
-*/
-/* border-radius: 10px; */
+
+
