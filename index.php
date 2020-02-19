@@ -140,7 +140,9 @@ if(isset($_POST['enviar'])){
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
-$sendgrid = new \SendGrid(getenv('$key'));
+    
+    
+$sendgrid = new \SendGrid(getenv($key));
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
