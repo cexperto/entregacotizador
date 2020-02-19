@@ -130,7 +130,8 @@ if(isset($_POST['enviar'])){
 
         $subject="correito tdm";
         $messaje=[$marca,$modelo,$referencia];
-        
+        echo $messaje[0];
+    /*
         $email = new \SendGrid\Mail\Mail();
         $email->setForm("rattman.c@gmail.com","Andres Ayala");
         $email->setSubject($subject);
@@ -139,6 +140,6 @@ if(isset($_POST['enviar'])){
 
         $sendgrid = new \SendGrid($key);
         if($sendgrid->send($email));{echo "email enviado";}
-        
+      */  
     }
     ?>
