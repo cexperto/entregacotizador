@@ -13,8 +13,8 @@ $(document).on('ready',function(){
        });
     });
     //
-     $.post("correoA.php",$("#enviar").serialize(),function(){
-		});
+     /*$.post("correoA.php",$("#enviar").serialize(),function(){
+		});*/
      
     });
 
