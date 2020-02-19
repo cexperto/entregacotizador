@@ -113,7 +113,7 @@ style="background-color:#ffcd00;color: #213f99;font-weight: bold;"><div></div>
 </body>
     
    
-<!--<scrip src="js/resultado.js"></script>-->
+<scrip src="js/resultado.js"></script>
 <script src="js/activarcolores.js"></script>
 <script src="js/validaciones.js"></script>
 <script src="js/marca.js"></script>
