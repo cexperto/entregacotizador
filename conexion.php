@@ -16,7 +16,7 @@ $dbUsername = 'ejxhyjxs_motos';
 
 $dbPassword = 'pl$wbamqWA.2';
 
-$dbName = 'ejxhyjxs_motos';*/
+$dbName = 'ejxhyjxs_motos';
 
 $dbHost = 'remotemysql.com';
 
@@ -24,11 +24,16 @@ $dbUsername = 'gu6EqlTj8p';
 
 $dbPassword = 'sqYM6pwdQp';
 
-$dbName = 'gu6EqlTj8p';
+$dbName = 'gu6EqlTj8p';*/
+$dbHost = '198.136.62.62';
+$dbUsername = 'ejxhyjxs_motos';
+$dbPassword = 'pl$wbamqWA.2';
+$dbName = 'ejxhyjxs_motos';
 
 
-198.136.62.62
-//Conectamos y seleccionamos la base de datos
+
+
+//Conectamos y seleccionamos la base de datos 198.136.62.62
 
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
